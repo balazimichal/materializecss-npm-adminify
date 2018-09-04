@@ -1,0 +1,20 @@
+// Variables
+
+$font-default: 'Helvetica', sans-serif;
+$font-alternate: 'Open Sans', sans-serif;
+
+// Colors
+$light-green: #e0e6ae;
+$medium-blue: #586d74;
+$medium-green: #279182;
+$light-yellow: #e4d29d;
+$medium-yellow: #eec856;
+$bright-yellow: #eef08a;
+$dark-yellow: #cdae50;
+$medium-red: #e15d5f;
+$dark-green: #819a2d;
+
+h1 {
+  color: $medium-blue;
+  border: 10px solid $medium-red;
+}

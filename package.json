@@ -2,15 +2,40 @@
   "name": "materializecss-npm-adminify",
   "version": "1.0.0",
   "description": "Adminify is administrator dashboard build with materialize CSS framework using NPM for sass, html and image compression.",
-  "main": "insex.html",
+  "main": "index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "npm-run-all --parallel dev:*",
+    "dev:serve-dev": "live-server dev",
+    "dev:sass-dev": "node-sass --watch dev/css --output-style compressed --source-map true dev/css/styles.scss --output dev/css",
+    "build": "npm-run-all prod:*",
+    "prod:prod-setup": "mkdirp prod/css prod/images",
+    "prod:copy-materialize-css": "cpx dev/css/materialize.min.css prod/css",
+    "prod:copy-materialize-js": "cpx dev/js/materialize.min.js prod/js",
+    "prod:html-minify": "html-minifier --collapse-whitespace dev/index.html > prod/index.html",
+    "prod:sass-dev": "node-sass dev/css --output-style compressed dev/css/style.scss --output prod/css",
+    "prod:image-compress": "imagemin dev/images/**/*.* --out-dir=prod/images --plugin=jpeg-recompress --plugin=svgo",
+    "deploy": "surge prod --domain adminify.surge.sh"
   },
   "keywords": [
     "materializecss",
     "materializecss-framework",
-    "materialize-css"
+    "materialize-css",
+    "materializecss-website",
+    "npm"
   ],
   "author": "Michal Balazi",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "cpx": "^1.5.0",
+    "html-minifier": "^3.5.20",
+    "imagemin": "^6.0.0",
+    "imagemin-cli": "^3.0.0",
+    "imagemin-jpeg-recompress": "^5.1.0",
+    "imagemin-svgo": "^7.0.0",
+    "live-server": "^1.2.0",
+    "mkdirp": "^0.5.1",
+    "node-sass": "^4.9.3",
+    "npm-run-all": "^4.1.3",
+    "surge": "^0.20.1"
+  }
 }
