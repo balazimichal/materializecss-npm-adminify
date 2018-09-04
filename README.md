@@ -4,12 +4,14 @@ Adminify is administrator dashboard build with materialize CSS framework using N
 
 You can preview this app on surge: http://adminify.surge.sh
 
-## Technologies
+## Technologies & services
 
 - materialize css framework
 - jQuery
-- Sass
+- Automated Sass
+- Automated image compression
 - NPM
+- Surge
 
 ## Installation instructions
 
