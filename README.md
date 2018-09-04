@@ -12,10 +12,11 @@ To run this project folow this steps:
 - Unzip the package and open the index.html file
 - CD into the project and run `npm install` to install dependencies
 - Run `npm start` to start the project
+- Edit and work on the files in /dev folder
 
 ## Deployment instructions
 
-- Run `npm run build` to build the project (build files can be found in build folder)
+- Run `npm run build` to build the project (build files can be found in /dist folder)
 - Run `npm run deploy` to deploy the project to surge (you need to have credentials)
 
 ## Image copyrights
