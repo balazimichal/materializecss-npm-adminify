@@ -205,8 +205,50 @@
                         </div>
                     </div>
                 </div>
-            </div>
 
+                <div class="col m12 l6">
+                    <div class="card">
+                        <div class="card-title section">
+                            <i class="material-icons">schedule</i>
+                            Todos<a href="#!" class=""><i class="material-icons right">more_horiz</i></a>
+                        </div>
+                        <div class="card-content">
+                            <form id="todo-form">
+                                <div class="input-field">
+                                    <input id="todo" type="text" class="validate">
+                                    <label for="todo">Add todo</label>
+                                </div>
+                            </form>
+
+
+                            <ul class="collection todos">
+                                <li class="collection-item">
+                                    <div>Schedule post about new product
+                                        <a href="#!" class="secondary-content delete"><i class="material-icons">delete</i></a>
+                                    </div>
+                                </li>
+                                <li class="collection-item">
+                                    <div>Email Richard latest usage statistics for monhly closure
+                                        <a href="#!" class="secondary-content delete"><i class="material-icons">delete</i></a>
+                                    </div>
+                                </li>
+                                <li class="collection-item">
+                                    <div>Schedule Tweets
+                                        <a href="#!" class="secondary-content delete"><i class="material-icons">delete</i></a>
+                                    </div>
+                                </li>
+                                <li class="collection-item">
+                                    <div>Renew facebook advert before 28th
+                                        <a href="#!" class="secondary-content delete"><i class="material-icons">delete</i></a>
+                                    </div>
+                                </li>
+                            </ul>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
 
 
 
@@ -286,11 +328,47 @@
                     classes: 'adminify-toast-ok'
                 })
             })
-
             $('.deny').click(function (e) {
                 e.preventDefault();
                 M.toast({
                     html: 'Comment Denied',
+                    displayLength: 3000,
+                    classes: 'adminify-toast-ok'
+                })
+            })
+
+            // quick todos
+            $('#todo-form').submit(function (e) {
+                e.preventDefault();
+                const input = $('#todo').val();
+                if (input === '') {
+                    M.toast({
+                        html: 'You can not submit empty todo',
+                        displayLength: 3000,
+                        classes: 'adminify-toast-error'
+                    })
+                } else {
+                    const output = `                                <li class="collection-item">
+                                    <div>${$('#todo').val()}<a href="#!" class="secondary-content delete"><i class="material-icons">delete</i></a></div>
+                                </li>`;
+
+                    $('.todos').append(output);
+                    M.toast({
+                        html: 'Todo Added',
+                        displayLength: 3000,
+                        classes: 'adminify-toast-ok'
+                    })
+                    $('#todo').val('')
+                }
+
+            })
+
+            // delete quick
+            $('.todos').on('click', '.delete', function (e) {
+                e.preventDefault();
+                $(this).parent().parent().remove();
+                M.toast({
+                    html: 'Todo Removed',
                     displayLength: 3000,
                     classes: 'adminify-toast-ok'
                 })
