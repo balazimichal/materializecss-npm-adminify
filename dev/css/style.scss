@@ -119,6 +119,8 @@ nav ul li:hover {
 
   .collection-item .secondary-content {
     color: $primary !important;
+    position: absolute !important;
+    right: 0;
   }
 }
 
