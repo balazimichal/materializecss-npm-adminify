@@ -103,10 +103,12 @@ nav ul li:hover {
 
       p {
         font-style: italic;
+        width: 90%;
       }
     }
   }
   .collection-item.avatar .secondary-content {
+    top: 10px;
     right: 0;
     width: 30px;
   }
