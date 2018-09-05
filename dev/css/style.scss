@@ -12,7 +12,8 @@ h6 {
   margin: 0 !important;
 }
 
-.btn {
+.btn,
+.btn-floating {
   background-color: $primary !important;
 }
 
@@ -353,6 +354,15 @@ nav ul li:hover {
 .input-field input[type='text'].invalid {
   border-bottom: 1px solid $grey !important;
   box-shadow: 0 1px 0 0 $grey !important;
+}
+
+table {
+  border-bottom: 1px solid $black !important;
+  margin-bottom: 40px;
+}
+
+table.striped > tbody > tr:nth-child(odd) {
+  background: $black;
 }
 /*
 // nesting
