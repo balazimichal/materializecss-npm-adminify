@@ -43,8 +43,12 @@ nav ul li:hover {
 
   li > a,
   li > a > i.material-icons {
-    color: $white;
+    color: $grey;
   }
+}
+
+.page-title {
+  line-height: 40px;
 }
 
 .card {
