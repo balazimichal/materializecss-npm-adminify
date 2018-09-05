@@ -112,6 +112,21 @@
         </div>
     </section>
 
+    <!-- PRELOADER -->
+    <div class="loader preloader-wrapper big active">
+        <div class="spinner-layer spinner-blue-only">
+            <div class="circle-clipper left">
+                <div class="circle"></div>
+            </div>
+            <div class="gap-patch">
+                <div class="circle"></div>
+            </div>
+            <div class="circle-clipper right">
+                <div class="circle"></div>
+            </div>
+        </div>
+    </div>
+
 
     <!-- SCRIPTS -->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
@@ -121,6 +136,12 @@
 
             // side navigation
             $('.sidenav').sidenav();
+
+            // section fade in
+            $('.section').delay(800).fadeIn();
+
+            // preloader fade out
+            $('.loader').delay(400).fadeOut();
 
             // counter
             $('.count').each(function () {
