@@ -303,6 +303,19 @@ nav ul li:hover {
 .fixed-action-btn .btn-floating {
   background: $primary;
 }
+
+.dropdown-content {
+  background-color: $dark-grey;
+}
+
+.dropdown-content li > a,
+.dropdown-content li > span {
+  color: $grey;
+}
+
+.dropdown-content li > a:hover {
+  background: $black;
+}
 /*
 // nesting
 header {

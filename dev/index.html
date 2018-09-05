@@ -37,6 +37,26 @@
         </nav>
 
         <ul class="sidenav" id="mobile-demo">
+            <li>
+                <div class="user-view">
+                    <div class="background">
+                        <img src="images/bg-nav.jpg" alt="">
+                    </div>
+                    <a href="#!">
+                        <img src="images/user1.jpg" alt="" class="circle">
+                    </a>
+                    <a href="#!">
+                        <span class="name white-text">
+                            Dominique Traski
+                        </span>
+                    </a>
+                    <a href="#!">
+                        <span class="email white-text">
+                            d.traski@somewhere.com
+                        </span>
+                    </a>
+                </div>
+            </li>
             <li class="active"><a href="index.html"><i class="material-icons left">dashboard</i>Dashboard</a></li>
             <li><a href="posts.html"><i class="material-icons left">create</i>Posts</a></li>
             <li><a href="categories.html"><i class="material-icons left">label</i>Categories</a></li>
@@ -57,7 +77,14 @@
                     <h5 class="white-text left page-title">Dashboard</h5>
                 </div>
                 <div class="col s6">
-                    <a class="waves-effect waves-light btn right"><i class="material-icons left">settings</i>Settings</a>
+                    <a class="waves-effect waves-light btn right dropdown-trigger" data-target='dropdown1'><i class="material-icons left">settings</i>Settings</a>
+                    <ul id='dropdown1' class='dropdown-content'>
+                        <li><a href="#!"><i class="material-icons">data_usage</i>Analytics</a></li>
+                        <li><a href="#!"><i class="material-icons">print</i>Print</a></li>
+                        <li><a href="#!"><i class="material-icons">cloud_download</i>Download</a></li>
+
+
+                    </ul>
                 </div>
             </div>
 
@@ -247,6 +274,8 @@
             // fixed action button
             $('.fixed-action-btn').floatingActionButton();
 
+            // settings dropdown button
+            $('.dropdown-trigger').dropdown({ constrainWidth: false, alignment: 'right' });
 
             // approve - deny
             $('.approve').click(function (e) {
