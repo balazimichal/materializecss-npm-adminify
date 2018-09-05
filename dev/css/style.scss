@@ -17,11 +17,11 @@ h6 {
 }
 
 .ok {
-  color: $green;
+  color: $ok;
 }
 
 .error {
-  color: $red;
+  color: $error;
 }
 
 body {
@@ -262,13 +262,29 @@ nav ul li:hover {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#edb95e', endColorstr='#e15d2a', GradientType=1 );
 }
 
-.adminify-toast-ok {
+.adminify-orange-plain {
+  background: $orange;
+}
+
+.adminify-purple-plain {
+  background: $purple;
+}
+
+.adminify-pink-plain {
+  background: $pink;
+}
+
+.adminify-green-plain {
   background: $green;
+}
+
+.adminify-toast-ok {
+  background: $ok;
   color: $white;
 }
 
 .adminify-toast-error {
-  background: $red;
+  background: $error;
   color: $white;
 }
 
@@ -282,6 +298,10 @@ nav ul li:hover {
 
 .pagination li.active {
   background-color: $primary !important;
+}
+
+.fixed-action-btn .btn-floating {
+  background: $primary;
 }
 /*
 // nesting

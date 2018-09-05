@@ -26,7 +26,7 @@
                                 <li class="active"><a href="index.html"><i class="material-icons left">dashboard</i>Dashboard</a></li>
                                 <li><a href="posts.html"><i class="material-icons left">create</i>Posts</a></li>
                                 <li><a href="categories.html"><i class="material-icons left">label</i>Categories</a></li>
-                                <li><a href="comments.html"><i class="material-icons left">insert_comment</i>Comments</a></li>
+                                <li><a href="comments.html"><i class="material-icons left">comment</i>Comments</a></li>
                                 <li><a href="users.html"><i class="material-icons left">group</i>Users</a></li>
                                 <li><a href="logout.html"><i class="material-icons left">power_settings_new</i>Logout</a></li>
                             </ul>
@@ -40,7 +40,7 @@
             <li class="active"><a href="index.html"><i class="material-icons left">dashboard</i>Dashboard</a></li>
             <li><a href="posts.html"><i class="material-icons left">create</i>Posts</a></li>
             <li><a href="categories.html"><i class="material-icons left">label</i>Categories</a></li>
-            <li><a href="comments.html"><i class="material-icons left">insert_comment</i>Comments</a></li>
+            <li><a href="comments.html"><i class="material-icons left">comment</i>Comments</a></li>
             <li><a href="users.html"><i class="material-icons left">group</i>Users</a></li>
             <li><a href="logout.html"><i class="material-icons left">power_settings_new</i>Logout</a></li>
         </ul>
@@ -91,7 +91,7 @@
                     <div class="card adminify-green">
                         <div class="card-content center">
                             <span class="white-text card-title">Comments</span>
-                            <i class="material-icons white-text large">insert_comment</i>
+                            <i class="material-icons white-text large">comment</i>
                             <h3 class="white-text count">1200</h3>
                             <div class="progress white">
                                 <div class="determinate cyan lighten-3" style="width: 45%"></div>
@@ -187,6 +187,19 @@
         </div>
     </section>
 
+    <!-- FLOATING BUTTON -->
+    <div class="fixed-action-btn">
+        <a class="btn-floating btn-large">
+            <i class="large material-icons">mode_edit</i>
+        </a>
+        <ul>
+            <li><a class="btn-floating"><i class="material-icons adminify-orange-plain">group</i></a></li>
+            <li><a class="btn-floating"><i class="material-icons adminify-green-plain">comment</i></a></li>
+            <li><a class="btn-floating"><i class="material-icons adminify-pink-plain">create</i></a></li>
+            <li><a class="btn-floating"><i class="material-icons adminify-purple-plain">label</i></a></li>
+        </ul>
+    </div>
+
     <!-- PRELOADER -->
     <div class="loader preloader-wrapper big active">
         <div class="spinner-layer spinner-blue-only">
@@ -230,6 +243,10 @@
                         }
                     })
             })
+
+            // fixed action button
+            $('.fixed-action-btn').floatingActionButton();
+
 
             // approve - deny
             $('.approve').click(function (e) {
