@@ -271,6 +271,18 @@ nav ul li:hover {
   background: $red;
   color: $white;
 }
+
+.pagination li a {
+  color: $primary;
+}
+
+.pagination li.disabled a {
+  color: $grey;
+}
+
+.pagination li.active {
+  background-color: $primary !important;
+}
 /*
 // nesting
 header {
