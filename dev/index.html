@@ -15,30 +15,42 @@
 
 <body>
     <!-- SECTION: Header -->
-    <h1>Hello World!</h1>
+    <header>
+        <nav>
+            <div class="container">
+                <div class="nav-wrapper">
+                    <a href="#!" class="brand-logo">Adminify</a>
+                    <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                    <ul class="right hide-on-med-and-down">
+                        <li class="active"><a href="index.html">Dashboard</a></li>
+                        <li><a href="posts.html">Posts</a></li>
+                        <li><a href="categories.html">Categories</a></li>
+                        <li><a href="comments.html">Comments</a></li>
+                        <li><a href="users.html">Users</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <ul class="sidenav" id="mobile-demo">
+            <li class="active"><a href="index.html">Dashboard</a></li>
+            <li><a href="posts.html">Posts</a></li>
+            <li><a href="categories.html">Categories</a></li>
+            <li><a href="comments.html">Comments</a></li>
+            <li><a href="users.html">Users</a></li>
+        </ul>
+    </header>
+
+
 
 
     <!-- SCRIPTS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script type="text/javascript" src="js/materialize.min.js"></script>
     <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            var elems = document.querySelectorAll('.sidenav');
-            var options = {
-                'edge': 'left'
-            }
-            var instances = M.Sidenav.init(elems, options);
+        $(document).ready(function () {
+            $('.sidenav').sidenav();
         });
-
-        document.addEventListener('DOMContentLoaded', function () {
-            var elems = document.querySelectorAll('.modal');
-            var options = {
-                'opacity': 0.5
-            }
-            var instances = M.Modal.init(elems, options);
-        });
-
-
-
     </script>
 </body>
 

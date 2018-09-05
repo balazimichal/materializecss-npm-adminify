@@ -1,20 +1,61 @@
-// Variables
+// import with variables
+@import 'variables';
 
-$font-default: 'Helvetica', sans-serif;
-$font-alternate: 'Open Sans', sans-serif;
-
-// Colors
-$light-green: #e0e6ae;
-$medium-blue: #586d74;
-$medium-green: #279182;
-$light-yellow: #e4d29d;
-$medium-yellow: #eec856;
-$bright-yellow: #eef08a;
-$dark-yellow: #cdae50;
-$medium-red: #e15d5f;
-$dark-green: #819a2d;
-
-h1 {
-  color: $medium-blue;
-  border: 10px solid $medium-red;
+body {
+  background: $black;
 }
+
+header nav {
+  background: $dark-grey !important;
+}
+
+/*
+// nesting
+header {
+  height: 64px;
+  background: $dark-green;
+
+  .brand-logo {
+    line-height: 64px;
+    font-size: 24px;
+    color: $light-yellow;
+  }
+}
+
+// mixin
+@mixin decorativeDivider($height, $width) {
+  width: $width;
+  height: $height;
+}
+
+.divi {
+  display: block;
+  background: $medium-red;
+  @include decorativeDivider(5px, 100px);
+  margin: 30px 0;
+}
+
+// @extend
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background: $dark-green;
+  color: $light-yellow;
+  text-transform: uppercase;
+  // nesting
+  &:hover {
+    background: $medium-blue;
+    cursor: pointer;
+  }
+}
+
+.button-red {
+  @extend .button;
+  background: $medium-red;
+}
+
+.button-big {
+  @extend .button;
+  padding: 20px 30px;
+}
+*/
