@@ -1,0 +1,85 @@
+<!DOCTYPE html><html><head><link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"><link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"><link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection"><link type="text/css" rel="stylesheet" href="css/style.css" media="screen,projection"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Adminify | Painless administration</title></head><body><!-- SECTION: Header --><header><nav><div class="adminify-container"><div class="row"><div class="col s12"><div class="nav-wrapper"><a href="#!" class="brand-logo">Adminify</a> <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a><ul class="right hide-on-med-and-down"><li><a href="index.html"><i class="material-icons left">dashboard</i>Dashboard</a></li><li class="active"><a href="posts.html"><i class="material-icons left">create</i>Posts</a></li><li><a href="categories.html"><i class="material-icons left">label</i>Categories</a></li><li><a href="comments.html"><i class="material-icons left">comment</i>Comments</a></li><li><a href="users.html"><i class="material-icons left">group</i>Users</a></li><li><a href="logout.html"><i class="material-icons left">power_settings_new</i>Logout</a></li></ul></div></div></div></div></nav><ul class="sidenav" id="mobile-demo"><li><div class="user-view"><div class="background"><img src="images/bg-nav.jpg" alt=""></div><a href="#!"><img src="images/user1.jpg" alt="" class="circle"> </a><a href="#!"><span class="name white-text">Dominique Traski </span></a><a href="#!"><span class="email white-text">d.traski@somewhere.com</span></a></div></li><li><a href="index.html"><i class="material-icons left">dashboard</i>Dashboard</a></li><li class="active"><a href="posts.html"><i class="material-icons left">create</i>Posts</a></li><li><a href="categories.html"><i class="material-icons left">label</i>Categories</a></li><li><a href="comments.html"><i class="material-icons left">comment</i>Comments</a></li><li><a href="users.html"><i class="material-icons left">group</i>Users</a></li><li><a href="logout.html"><i class="material-icons left">power_settings_new</i>Logout</a></li></ul></header><!-- SECTION: Dashboard --><section class="section section-dashboard"><div class="adminify-container"><!-- ROW: Page title  --><div class="row"><div class="col s6"><h5 class="white-text left page-title">Posts</h5></div><div class="col s6"><a class="btn-floating waves-effect waves-light right"><i class="material-icons">add</i></a></div></div><!-- ROW: Overview cards  --><div class="row"><div class="col s12"><div class="card"><div class="card-title section"><i class="material-icons">create</i> Posts<a href="#!" class=""><i class="material-icons right">more_horiz</i></a></div><div class="card-content"><table class="striped responsive-table"><thead><tr><th>Title</th><th>Author</th><th>Views</th><th>Comments</th><th>Date</th></tr></thead><tbody><tr><td>Do You Need a Corporate Veil?</td><td>Anna G.</td><td>273</td><td>24</td><td>29th Aug 18</td></tr><tr><td>What Is a Reseller License?</td><td>Zana F.</td><td>186</td><td>12</td><td>22nd Aug 18</td></tr><tr><td>How to Legally Start a Food Truck Business</td><td>Jonathan D.</td><td>155</td><td>6</td><td>14th Aug 18</td></tr><tr><td>How to Hire a Ghostwriter for Your Accounting Blog</td><td>Anna G.</td><td>337</td><td>56</td><td>8th Aug 18</td></tr><tr><td>What Is the LLC Tax Rate?</td><td>Zana F.</td><td>119</td><td>5</td><td>1st Aug 18</td></tr><tr><td>What to Expect When Selling Your Business</td><td>Anna G.</td><td>84</td><td>78</td><td>26th July 18</td></tr><tr><td>Choosing the Best State to Start a Business</td><td>Jonathan D.</td><td>112</td><td>13</td><td>19th July 18</td></tr><tr><td>Buying a Business Checklist</td><td>Jonathan D.</td><td>138</td><td>25</td><td>11th July 18</td></tr><tr><td>How to Become a Virtual Bookkeeper</td><td>Anna G.</td><td>47</td><td>2</td><td>4th July 18</td></tr><tr><td>Don’t Let Poor Accounting Firm Management Stifle Your Growth</td><td>Jonathan D.</td><td>79</td><td>34</td><td>25th June 18</td></tr></tbody></table><ul class="pagination"><li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li><li class="active"><a href="#!">1</a></li><li class="waves-effect"><a href="#!">2</a></li><li class="waves-effect"><a href="#!">3</a></li><li class="waves-effect"><a href="#!">4</a></li><li class="waves-effect"><a href="#!">5</a></li><li class="waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a></li></ul></div></div></div></div></div></section><!-- PRELOADER --><div class="loader preloader-wrapper big active"><div class="spinner-layer spinner-blue-only"><div class="circle-clipper left"><div class="circle"></div></div><div class="gap-patch"><div class="circle"></div></div><div class="circle-clipper right"><div class="circle"></div></div></div></div><!-- SCRIPTS --><script src="https://code.jquery.com/jquery-3.3.1.min.js"></script><script type="text/javascript" src="js/materialize.min.js"></script><script>$(document).ready(function () {
+
+            // side navigation
+            $('.sidenav').sidenav();
+
+            // section fade in
+            $('.section').delay(800).fadeIn();
+
+            // preloader fade out
+            $('.loader').delay(400).fadeOut();
+
+            // counter
+            $('.count').delay(800).each(function () {
+                $(this).prop('Counter', 0).animate({
+                    Counter: $(this).text()
+                }, {
+                        duration: 1000,
+                        easing: 'swing',
+                        step: function (now) {
+                            $(this).text(Math.ceil(now));
+                        }
+                    })
+            })
+
+            // fixed action button
+            $('.fixed-action-btn').floatingActionButton();
+
+            // settings dropdown button
+            $('.dropdown-trigger').dropdown({ constrainWidth: false, alignment: 'right' });
+
+            // approve - deny
+            $('.approve').click(function (e) {
+                e.preventDefault();
+                M.toast({
+                    html: 'Comment Approved',
+                    displayLength: 3000,
+                    classes: 'adminify-toast-ok'
+                })
+            })
+            $('.deny').click(function (e) {
+                e.preventDefault();
+                M.toast({
+                    html: 'Comment Denied',
+                    displayLength: 3000,
+                    classes: 'adminify-toast-ok'
+                })
+            })
+
+            // quick todos
+            $('#todo-form').submit(function (e) {
+                e.preventDefault();
+                const input = $('#todo').val();
+                if (input === '') {
+                    M.toast({
+                        html: 'You can not submit empty todo',
+                        displayLength: 3000,
+                        classes: 'adminify-toast-error'
+                    })
+                } else {
+                    const output = `                                <li class="collection-item">
+                                    <div>${$('#todo').val()}<a href="#!" class="secondary-content delete"><i class="material-icons">delete</i></a></div>
+                                </li>`;
+
+                    $('.todos').append(output);
+                    M.toast({
+                        html: 'Todo Added',
+                        displayLength: 3000,
+                        classes: 'adminify-toast-ok'
+                    })
+                    $('#todo').val('')
+                }
+
+            })
+
+            // delete quick
+            $('.todos').on('click', '.delete', function (e) {
+                e.preventDefault();
+                $(this).parent().parent().remove();
+                M.toast({
+                    html: 'Todo Removed',
+                    displayLength: 3000,
+                    classes: 'adminify-toast-ok'
+                })
+            })
+        });</script></body></html>

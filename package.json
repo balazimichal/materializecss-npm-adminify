@@ -11,7 +11,8 @@
     "prod:prod-setup": "mkdirp prod/css prod/images",
     "prod:copy-materialize-css": "cpx dev/css/materialize.min.css prod/css",
     "prod:copy-materialize-js": "cpx dev/js/materialize.min.js prod/js",
-    "prod:html-minify": "html-minifier --collapse-whitespace dev/index.html > prod/index.html",
+    "prod:html-minify-index": "html-minifier --collapse-whitespace dev/index.html > prod/index.html",
+    "prod:html-minify-posts": "html-minifier --collapse-whitespace dev/posts.html > prod/posts.html",
     "prod:sass-dev": "node-sass dev/css --output-style compressed dev/css/style.scss --output prod/css",
     "prod:image-compress": "imagemin dev/images/**/*.* --out-dir=prod/images --plugin=jpeg-recompress --plugin=svgo",
     "deploy": "surge prod --domain adminify.surge.sh"

@@ -77,7 +77,35 @@
                     <h5 class="white-text left page-title">Posts</h5>
                 </div>
                 <div class="col s6">
-                    <a class="btn-floating waves-effect waves-light right"><i class="material-icons">add</i></a>
+                    <a href="#modal" class="btn-floating waves-effect waves-light right  modal-trigger"><i class="material-icons">add</i></a>
+
+                    <!-- ROW: Modal  -->
+                    <div id="modal" class="modal">
+                        <div class="modal-content">
+                            <h4>Add Post</h4>
+                            <form>
+                                <div class="input-field">
+                                    <input type="text" id="title">
+                                    <label for="title">Title</label>
+                                </div>
+                                <div class="input-field">
+                                    <select>
+                                        <option value="" disabled selected>Choose your option</option>
+                                        <option value="1">Business</option>
+                                        <option value="2">Accountancy</option>
+                                        <option value="3">Social Marketing</option>
+                                    </select>
+                                </div>
+                                <div class="input-field">
+                                    <textarea name="body" id="body" class="materialize-textarea" cols="30" rows="10"></textarea>
+                                    <label for="body">Body</label>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <a href="#!" class="modal-action modal-close btn waves-effect waves-light white-text">Submit</a>
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -102,6 +130,7 @@
                                         <th>Views</th>
                                         <th>Comments</th>
                                         <th>Date</th>
+                                        <th>&nbsp;</th>
                                     </tr>
                                 </thead>
 
@@ -112,6 +141,14 @@
                                         <td>273</td>
                                         <td>24</td>
                                         <td>29th Aug 18</td>
+                                        <td>
+                                            <a class="btn-floating waves-effect waves-light btn-small center adminify-red"><i
+                                                    class="material-icons">delete</i></a>
+                                            <a class="btn-floating waves-effect waves-light btn-small center adminify-orange"><i
+                                                    class="material-icons">edit</i></a>
+                                            <a class="btn-floating waves-effect waves-light btn-small center adminify-green"><i
+                                                    class="material-icons">visibility</i></a>
+                                        </td>
                                     </tr>
                                     <tr>
                                         <td>What Is a Reseller License?</td>
@@ -119,6 +156,14 @@
                                         <td>186</td>
                                         <td>12</td>
                                         <td>22nd Aug 18</td>
+                                        <td>
+                                            <a class="btn-floating waves-effect waves-light btn-small center adminify-red"><i
+                                                    class="material-icons">delete</i></a>
+                                            <a class="btn-floating waves-effect waves-light btn-small center adminify-orange"><i
+                                                    class="material-icons">edit</i></a>
+                                            <a class="btn-floating waves-effect waves-light btn-small center adminify-green"><i
+                                                    class="material-icons">visibility</i></a>
+                                        </td>
                                     </tr>
                                     <tr>
                                         <td>How to Legally Start a Food Truck Business</td>
@@ -126,6 +171,14 @@
                                         <td>155</td>
                                         <td>6</td>
                                         <td>14th Aug 18</td>
+                                        <td>
+                                            <a class="btn-floating waves-effect waves-light btn-small center adminify-red"><i
+                                                    class="material-icons">delete</i></a>
+                                            <a class="btn-floating waves-effect waves-light btn-small center adminify-orange"><i
+                                                    class="material-icons">edit</i></a>
+                                            <a class="btn-floating waves-effect waves-light btn-small center adminify-green"><i
+                                                    class="material-icons">visibility</i></a>
+                                        </td>
                                     </tr>
                                     <tr>
                                         <td>How to Hire a Ghostwriter for Your Accounting Blog</td>
@@ -133,6 +186,14 @@
                                         <td>337</td>
                                         <td>56</td>
                                         <td>8th Aug 18</td>
+                                        <td>
+                                            <a class="btn-floating waves-effect waves-light btn-small center adminify-red"><i
+                                                    class="material-icons">delete</i></a>
+                                            <a class="btn-floating waves-effect waves-light btn-small center adminify-orange"><i
+                                                    class="material-icons">edit</i></a>
+                                            <a class="btn-floating waves-effect waves-light btn-small center adminify-green"><i
+                                                    class="material-icons">visibility</i></a>
+                                        </td>
                                     </tr>
                                     <tr>
                                         <td>What Is the LLC Tax Rate?</td>
@@ -140,6 +201,14 @@
                                         <td>119</td>
                                         <td>5</td>
                                         <td>1st Aug 18</td>
+                                        <td>
+                                            <a class="btn-floating waves-effect waves-light btn-small center adminify-red"><i
+                                                    class="material-icons">delete</i></a>
+                                            <a class="btn-floating waves-effect waves-light btn-small center adminify-orange"><i
+                                                    class="material-icons">edit</i></a>
+                                            <a class="btn-floating waves-effect waves-light btn-small center adminify-green"><i
+                                                    class="material-icons">visibility</i></a>
+                                        </td>
                                     </tr>
                                     <tr>
                                         <td>What to Expect When Selling Your Business</td>
@@ -147,6 +216,14 @@
                                         <td>84</td>
                                         <td>78</td>
                                         <td>26th July 18</td>
+                                        <td>
+                                            <a class="btn-floating waves-effect waves-light btn-small center adminify-red"><i
+                                                    class="material-icons">delete</i></a>
+                                            <a class="btn-floating waves-effect waves-light btn-small center adminify-orange"><i
+                                                    class="material-icons">edit</i></a>
+                                            <a class="btn-floating waves-effect waves-light btn-small center adminify-green"><i
+                                                    class="material-icons">visibility</i></a>
+                                        </td>
                                     </tr>
                                     <tr>
                                         <td>Choosing the Best State to Start a Business</td>
@@ -154,6 +231,14 @@
                                         <td>112</td>
                                         <td>13</td>
                                         <td>19th July 18</td>
+                                        <td>
+                                            <a class="btn-floating waves-effect waves-light btn-small center adminify-red"><i
+                                                    class="material-icons">delete</i></a>
+                                            <a class="btn-floating waves-effect waves-light btn-small center adminify-orange"><i
+                                                    class="material-icons">edit</i></a>
+                                            <a class="btn-floating waves-effect waves-light btn-small center adminify-green"><i
+                                                    class="material-icons">visibility</i></a>
+                                        </td>
                                     </tr>
                                     <tr>
                                         <td>Buying a Business Checklist</td>
@@ -161,6 +246,14 @@
                                         <td>138</td>
                                         <td>25</td>
                                         <td>11th July 18</td>
+                                        <td>
+                                            <a class="btn-floating waves-effect waves-light btn-small center adminify-red"><i
+                                                    class="material-icons">delete</i></a>
+                                            <a class="btn-floating waves-effect waves-light btn-small center adminify-orange"><i
+                                                    class="material-icons">edit</i></a>
+                                            <a class="btn-floating waves-effect waves-light btn-small center adminify-green"><i
+                                                    class="material-icons">visibility</i></a>
+                                        </td>
                                     </tr>
                                     <tr>
                                         <td>How to Become a Virtual Bookkeeper</td>
@@ -168,6 +261,14 @@
                                         <td>47</td>
                                         <td>2</td>
                                         <td>4th July 18</td>
+                                        <td>
+                                            <a class="btn-floating waves-effect waves-light btn-small center adminify-red"><i
+                                                    class="material-icons">delete</i></a>
+                                            <a class="btn-floating waves-effect waves-light btn-small center adminify-orange"><i
+                                                    class="material-icons">edit</i></a>
+                                            <a class="btn-floating waves-effect waves-light btn-small center adminify-green"><i
+                                                    class="material-icons">visibility</i></a>
+                                        </td>
                                     </tr>
                                     <tr>
                                         <td> Don’t Let Poor Accounting Firm Management Stifle Your Growth</td>
@@ -175,6 +276,14 @@
                                         <td>79</td>
                                         <td>34</td>
                                         <td>25th June 18</td>
+                                        <td>
+                                            <a class="btn-floating waves-effect waves-light btn-small center adminify-red"><i
+                                                    class="material-icons">delete</i></a>
+                                            <a class="btn-floating waves-effect waves-light btn-small center adminify-orange"><i
+                                                    class="material-icons">edit</i></a>
+                                            <a class="btn-floating waves-effect waves-light btn-small center adminify-green"><i
+                                                    class="material-icons">visibility</i></a>
+                                        </td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -234,79 +343,13 @@
             // preloader fade out
             $('.loader').delay(400).fadeOut();
 
-            // counter
-            $('.count').delay(800).each(function () {
-                $(this).prop('Counter', 0).animate({
-                    Counter: $(this).text()
-                }, {
-                        duration: 1000,
-                        easing: 'swing',
-                        step: function (now) {
-                            $(this).text(Math.ceil(now));
-                        }
-                    })
-            })
+            // modal button
+            $('.modal').modal();
 
-            // fixed action button
-            $('.fixed-action-btn').floatingActionButton();
+            // select
+            $('select').formSelect();
 
-            // settings dropdown button
-            $('.dropdown-trigger').dropdown({ constrainWidth: false, alignment: 'right' });
 
-            // approve - deny
-            $('.approve').click(function (e) {
-                e.preventDefault();
-                M.toast({
-                    html: 'Comment Approved',
-                    displayLength: 3000,
-                    classes: 'adminify-toast-ok'
-                })
-            })
-            $('.deny').click(function (e) {
-                e.preventDefault();
-                M.toast({
-                    html: 'Comment Denied',
-                    displayLength: 3000,
-                    classes: 'adminify-toast-ok'
-                })
-            })
-
-            // quick todos
-            $('#todo-form').submit(function (e) {
-                e.preventDefault();
-                const input = $('#todo').val();
-                if (input === '') {
-                    M.toast({
-                        html: 'You can not submit empty todo',
-                        displayLength: 3000,
-                        classes: 'adminify-toast-error'
-                    })
-                } else {
-                    const output = `                                <li class="collection-item">
-                                    <div>${$('#todo').val()}<a href="#!" class="secondary-content delete"><i class="material-icons">delete</i></a></div>
-                                </li>`;
-
-                    $('.todos').append(output);
-                    M.toast({
-                        html: 'Todo Added',
-                        displayLength: 3000,
-                        classes: 'adminify-toast-ok'
-                    })
-                    $('#todo').val('')
-                }
-
-            })
-
-            // delete quick
-            $('.todos').on('click', '.delete', function (e) {
-                e.preventDefault();
-                $(this).parent().parent().remove();
-                M.toast({
-                    html: 'Todo Removed',
-                    displayLength: 3000,
-                    classes: 'adminify-toast-ok'
-                })
-            })
         });
     </script>
 </body>

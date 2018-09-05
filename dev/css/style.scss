@@ -17,6 +17,10 @@ h6 {
   background-color: $primary !important;
 }
 
+table .btn-floating {
+  margin-left: 5px;
+}
+
 .ok {
   color: $ok;
 }
@@ -332,26 +336,32 @@ nav ul li:hover {
   color: $grey !important;
 }
 
+.input-field textarea,
 .input-field input[type='text'] {
   border-bottom: 1px solid $grey !important;
+  color: $white !important;
 }
 
-.input-field input[type='text']:focus + label {
+.input-field input[type='text']:focus + label,
+.input-field textarea:focus + label {
   color: $grey !important;
 }
 
-.input-field input[type='text']:focus {
+.input-field input[type='text']:focus,
+.input-field textarea:focus {
   border-bottom: 1px solid $grey !important;
   box-shadow: 0 1px 0 0 $grey !important;
   color: $white !important;
 }
 
-.input-field input[type='text'].valid {
+.input-field input[type='text'].valid,
+.input-field textarea.valid {
   border-bottom: 1px solid $grey !important;
   box-shadow: 0 1px 0 0 $grey !important;
 }
 
-.input-field input[type='text'].invalid {
+.input-field input[type='text'].invalid,
+.input-field textarea.invalid {
   border-bottom: 1px solid $grey !important;
   box-shadow: 0 1px 0 0 $grey !important;
 }
@@ -363,6 +373,18 @@ table {
 
 table.striped > tbody > tr:nth-child(odd) {
   background: $black;
+}
+
+.modal {
+  background: $dark-grey;
+}
+
+.modal-content h4 {
+  color: $grey;
+}
+
+.modal-footer {
+  background-color: $black !important;
 }
 /*
 // nesting
