@@ -262,6 +262,15 @@ nav ul li:hover {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#edb95e', endColorstr='#e15d2a', GradientType=1 );
 }
 
+.adminify-toast-ok {
+  background: $green;
+  color: $white;
+}
+
+.adminify-toast-error {
+  background: $red;
+  color: $white;
+}
 /*
 // nesting
 header {

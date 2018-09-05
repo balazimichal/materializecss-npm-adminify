@@ -129,8 +129,8 @@
                                     <span class="title">Dominique Traski</span>
                                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi aliquid explicabo...</p>
                                     <span class="secondary-content">
-                                        <a href="#!" class=""><i class="material-icons">check</i></a>
-                                        <a href="#!" class=""><i class="material-icons">clear</i></a>
+                                        <a href="#!" class="approve"><i class="material-icons">check</i></a>
+                                        <a href="#!" class="deny"><i class="material-icons">clear</i></a>
                                     </span>
                                 </li>
                                 <li class="collection-item avatar">
@@ -139,8 +139,8 @@
                                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus...
                                     </p>
                                     <span class="secondary-content">
-                                        <a href="#!" class=""><i class="material-icons">check</i></a>
-                                        <a href="#!" class=""><i class="material-icons">clear</i></a>
+                                        <a href="#!" class="approve"><i class="material-icons">check</i></a>
+                                        <a href="#!" class="deny"><i class="material-icons">clear</i></a>
                                     </span>
 
                                 </li>
@@ -150,8 +150,8 @@
                                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, adipisci?
                                     </p>
                                     <span class="secondary-content">
-                                        <a href="#!" class=""><i class="material-icons">check</i></a>
-                                        <a href="#!" class=""><i class="material-icons">clear</i></a>
+                                        <a href="#!" class="approve"><i class="material-icons">check</i></a>
+                                        <a href="#!" class="deny"><i class="material-icons">clear</i></a>
                                     </span>
                                 </li>
                                 <li class="collection-item avatar">
@@ -160,8 +160,8 @@
                                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, voluptatum porro!
                                     </p>
                                     <span class="secondary-content">
-                                        <a href="#!" class=""><i class="material-icons">check</i></a>
-                                        <a href="#!" class=""><i class="material-icons">clear</i></a>
+                                        <a href="#!" class="approve"><i class="material-icons">check</i></a>
+                                        <a href="#!" class="deny"><i class="material-icons">clear</i></a>
                                     </span>
                                 </li>
                             </ul>
@@ -214,6 +214,25 @@
                             $(this).text(Math.ceil(now));
                         }
                     })
+            })
+
+            // approve - deny
+            $('.approve').click(function (e) {
+                e.preventDefault();
+                M.toast({
+                    html: 'Comment Approved',
+                    displayLength: 3000,
+                    classes: 'adminify-toast-ok'
+                })
+            })
+
+            $('.deny').click(function (e) {
+                e.preventDefault();
+                M.toast({
+                    html: 'Comment Denied',
+                    displayLength: 3000,
+                    classes: 'adminify-toast-ok'
+                })
             })
         });
     </script>
