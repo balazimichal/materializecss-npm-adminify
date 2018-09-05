@@ -16,6 +16,14 @@ h6 {
   background-color: $primary !important;
 }
 
+.ok {
+  color: $green;
+}
+
+.error {
+  color: $red;
+}
+
 body {
   background-color: $black;
 }
@@ -69,6 +77,39 @@ nav ul li:hover {
   -webkit-border-radius: 5px !important;
   -moz-border-radius: 5px !important;
   border-radius: 5px !important;
+
+  .card-title.section {
+    padding: 15px 20px !important;
+    border-bottom: 1px solid $black;
+
+    i {
+      position: relative;
+      bottom: -4px;
+      margin-right: 4px;
+    }
+  }
+
+  .collection {
+    border: none;
+
+    .collection-item {
+      background: none;
+      border-color: $black;
+      padding: 10px 0px 10px 72px;
+
+      .title {
+        font-weight: 600;
+      }
+
+      p {
+        font-style: italic;
+      }
+    }
+  }
+  .collection-item.avatar .secondary-content {
+    right: 0;
+    width: 30px;
+  }
 }
 
 .adminify-purple {

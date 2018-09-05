@@ -50,6 +50,8 @@
     <!-- SECTION: Dashboard -->
     <section class="section section-dashboard">
         <div class="adminify-container">
+
+            <!-- ROW: Page title  -->
             <div class="row">
                 <div class="col s6">
                     <h5 class="white-text left page-title">Dashboard</h5>
@@ -59,6 +61,7 @@
                 </div>
             </div>
 
+            <!-- ROW: Overview cards  -->
             <div class="row">
                 <div class="col s12 m6 l3">
                     <div class="card adminify-purple">
@@ -109,6 +112,63 @@
                     </div>
                 </div>
             </div>
+
+            <!-- ROW: Overview cards  -->
+            <div class="row">
+                <div class="col s12 m4">
+                    <div class="card">
+                        <div class="card-title section">
+                            <i class="material-icons">insert_comment</i>
+                            Recent Comments<a href="#!" class=""><i class="material-icons right">more_horiz</i></a>
+                        </div>
+                        <div class="card-content">
+
+                            <ul class="collection">
+                                <li class="collection-item avatar">
+                                    <img src="images/user1.jpg" alt="" class="circle">
+                                    <span class="title">Dominique Traski</span>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi aliquid explicabo...</p>
+                                    <span class="secondary-content">
+                                        <a href="#!" class=""><i class="material-icons">check</i></a>
+                                        <a href="#!" class=""><i class="material-icons">clear</i></a>
+                                    </span>
+                                </li>
+                                <li class="collection-item avatar">
+                                    <img src="images/user2.jpg" alt="" class="circle">
+                                    <span class="title">Tom Agricourt</span>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus...
+                                    </p>
+                                    <span class="secondary-content">
+                                        <a href="#!" class=""><i class="material-icons">check</i></a>
+                                        <a href="#!" class=""><i class="material-icons">clear</i></a>
+                                    </span>
+
+                                </li>
+                                <li class="collection-item avatar">
+                                    <img src="images/user3.jpg" alt="" class="circle">
+                                    <span class="title">Michael Loyd</span>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, adipisci?
+                                    </p>
+                                    <span class="secondary-content">
+                                        <a href="#!" class=""><i class="material-icons">check</i></a>
+                                        <a href="#!" class=""><i class="material-icons">clear</i></a>
+                                    </span>
+                                </li>
+                                <li class="collection-item avatar">
+                                    <img src="images/user4.jpg" alt="" class="circle">
+                                    <span class="title">Olivier Burke</span>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, voluptatum porro!
+                                    </p>
+                                    <span class="secondary-content">
+                                        <a href="#!" class=""><i class="material-icons">check</i></a>
+                                        <a href="#!" class=""><i class="material-icons">clear</i></a>
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -144,7 +204,7 @@
             $('.loader').delay(400).fadeOut();
 
             // counter
-            $('.count').each(function () {
+            $('.count').delay(800).each(function () {
                 $(this).prop('Counter', 0).animate({
                     Counter: $(this).text()
                 }, {
