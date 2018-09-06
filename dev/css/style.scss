@@ -17,6 +17,14 @@ h6 {
   background-color: $primary !important;
 }
 
+span.badge {
+  min-width: auto !important;
+  line-height: 16px;
+  height: 16px;
+  position: relative;
+  top: -1px;
+}
+
 table .btn-floating {
   margin-left: 5px;
 }
