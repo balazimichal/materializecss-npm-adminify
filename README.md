@@ -25,7 +25,7 @@ To run this project folow this steps:
 
 ## Deployment instructions
 
-- Run `npm run build` to build the project (build files can be found in /dist folder)
+- Run `npm run build` to build the project (build files can be found in /prod folder)
 - Run `npm run deploy` to deploy the project to surge (you need to have credentials)
 
 ## Image copyrights
