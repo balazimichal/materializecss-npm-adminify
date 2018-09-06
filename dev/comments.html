@@ -25,8 +25,8 @@
                             <ul class="right hide-on-med-and-down">
                                 <li><a href="index.html"><i class="material-icons left">dashboard</i>Dashboard</a></li>
                                 <li><a href="posts.html"><i class="material-icons left">create</i>Posts</a></li>
-                                <li class="active"><a href="categories.html"><i class="material-icons left">label</i>Categories</a></li>
-                                <li><a href="comments.html"><i class="material-icons left">comment</i>Comments</a></li>
+                                <li><a href="categories.html"><i class="material-icons left">label</i>Categories</a></li>
+                                <li class="active"><a href="comments.html"><i class="material-icons left">comment</i>Comments</a></li>
                                 <li><a href="users.html"><i class="material-icons left">group</i>Users</a></li>
                                 <li><a href="logout.html"><i class="material-icons left">power_settings_new</i>Logout</a></li>
                             </ul>
@@ -59,8 +59,8 @@
             </li>
             <li><a href="index.html"><i class="material-icons left">dashboard</i>Dashboard</a></li>
             <li><a href="posts.html"><i class="material-icons left">create</i>Posts</a></li>
-            <li class="active"><a href="categories.html"><i class="material-icons left">label</i>Categories</a></li>
-            <li><a href="comments.html"><i class="material-icons left">comment</i>Comments</a></li>
+            <li><a href="categories.html"><i class="material-icons left">label</i>Categories</a></li>
+            <li class="active"><a href="comments.html"><i class="material-icons left">comment</i>Comments</a></li>
             <li><a href="users.html"><i class="material-icons left">group</i>Users</a></li>
             <li><a href="logout.html"><i class="material-icons left">power_settings_new</i>Logout</a></li>
         </ul>
@@ -74,120 +74,67 @@
             <!-- ROW: Page title  -->
             <div class="row">
                 <div class="col s6">
-                    <h5 class="white-text left page-title">Categories</h5>
+                    <h5 class="white-text left page-title">Comments</h5>
                 </div>
                 <div class="col s6">
-                    <a href="#modal" class="btn-floating waves-effect waves-light right modal-trigger pulse"><i class="material-icons">add</i></a>
-
-                    <!-- ROW: Modal  -->
-                    <div id="modal" class="modal">
-                        <div class="modal-content">
-                            <h4>Add Category</h4>
-                            <form>
-                                <div class="input-field">
-                                    <input type="text" id="title">
-                                    <label for="title">Category Title</label>
-                                </div>
-                            </form>
-                        </div>
-                        <div class="modal-footer">
-                            <a href="#!" class="modal-action modal-close btn waves-effect waves-light white-text">Submit</a>
-                        </div>
-                    </div>
                 </div>
             </div>
 
 
             <!-- ROW: Overview cards  -->
             <div class="row">
-                <div class="col s12">
+                <div class="col m12">
                     <div class="card">
                         <div class="card-title section">
-                            <i class="material-icons">label</i>
-                            Categories<a href="#!" class=""><i class="material-icons right">more_horiz</i></a>
+                            <i class="material-icons">insert_comment</i>
+                            Recent Comments<a href="#!" class=""><i class="material-icons right">more_horiz</i></a>
                         </div>
                         <div class="card-content">
 
+                            <ul class="collection">
+                                <li class="collection-item avatar">
+                                    <img src="images/user1.jpg" alt="" class="circle">
+                                    <span class="title">Dominique Traski</span>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi aliquid
+                                        explicabo...</p>
+                                    <span class="secondary-content">
+                                        <a href="#!" class="approve"><i class="material-icons">check</i></a>
+                                        <a href="#!" class="deny"><i class="material-icons">clear</i></a>
+                                    </span>
+                                </li>
+                                <li class="collection-item avatar">
+                                    <img src="images/user2.jpg" alt="" class="circle">
+                                    <span class="title">Tom Agricourt</span>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus...
+                                    </p>
+                                    <span class="secondary-content">
+                                        <a href="#!" class="approve"><i class="material-icons">check</i></a>
+                                        <a href="#!" class="deny"><i class="material-icons">clear</i></a>
+                                    </span>
 
-
-                            <table class="striped responsive-table">
-                                <thead>
-                                    <tr>
-                                        <th>Title</th>
-                                        <th># Posts</th>
-                                        <th>Date</th>
-                                        <th>&nbsp;</th>
-                                    </tr>
-                                </thead>
-
-                                <tbody>
-                                    <tr>
-                                        <td>Business</td>
-                                        <td>22</td>
-                                        <td>11th Jan 18</td>
-                                        <td>
-                                            <a class="btn-floating waves-effect waves-light btn-small center adminify-red"><i
-                                                    class="material-icons">delete</i></a>
-                                            <a class="btn-floating waves-effect waves-light btn-small center adminify-orange"><i
-                                                    class="material-icons">edit</i></a>
-                                            <a class="btn-floating waves-effect waves-light btn-small center adminify-green"><i
-                                                    class="material-icons">visibility</i></a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>Marketing</td>
-                                        <td>12</td>
-                                        <td>11th Jan 18</td>
-                                        <td>
-                                            <a class="btn-floating waves-effect waves-light btn-small center adminify-red"><i
-                                                    class="material-icons">delete</i></a>
-                                            <a class="btn-floating waves-effect waves-light btn-small center adminify-orange"><i
-                                                    class="material-icons">edit</i></a>
-                                            <a class="btn-floating waves-effect waves-light btn-small center adminify-green"><i
-                                                    class="material-icons">visibility</i></a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>Accountancy</td>
-                                        <td>6</td>
-                                        <td>10th Jan 18</td>
-                                        <td>
-                                            <a class="btn-floating waves-effect waves-light btn-small center adminify-red"><i
-                                                    class="material-icons">delete</i></a>
-                                            <a class="btn-floating waves-effect waves-light btn-small center adminify-orange"><i
-                                                    class="material-icons">edit</i></a>
-                                            <a class="btn-floating waves-effect waves-light btn-small center adminify-green"><i
-                                                    class="material-icons">visibility</i></a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>Business Law</td>
-                                        <td>56</td>
-                                        <td>9th Jan 18</td>
-                                        <td>
-                                            <a class="btn-floating waves-effect waves-light btn-small center adminify-red"><i
-                                                    class="material-icons">delete</i></a>
-                                            <a class="btn-floating waves-effect waves-light btn-small center adminify-orange"><i
-                                                    class="material-icons">edit</i></a>
-                                            <a class="btn-floating waves-effect waves-light btn-small center adminify-green"><i
-                                                    class="material-icons">visibility</i></a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>Education</td>
-                                        <td>5</td>
-                                        <td>9th Jan 18</td>
-                                        <td>
-                                            <a class="btn-floating waves-effect waves-light btn-small center adminify-red"><i
-                                                    class="material-icons">delete</i></a>
-                                            <a class="btn-floating waves-effect waves-light btn-small center adminify-orange"><i
-                                                    class="material-icons">edit</i></a>
-                                            <a class="btn-floating waves-effect waves-light btn-small center adminify-green"><i
-                                                    class="material-icons">visibility</i></a>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
+                                </li>
+                                <li class="collection-item avatar">
+                                    <img src="images/user3.jpg" alt="" class="circle">
+                                    <span class="title">Michael Loyd</span>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, adipisci?
+                                    </p>
+                                    <span class="secondary-content">
+                                        <a href="#!" class="approve"><i class="material-icons">check</i></a>
+                                        <a href="#!" class="deny"><i class="material-icons">clear</i></a>
+                                    </span>
+                                </li>
+                                <li class="collection-item avatar">
+                                    <img src="images/user4.jpg" alt="" class="circle">
+                                    <span class="title">Olivier Burke</span>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, voluptatum
+                                        porro!
+                                    </p>
+                                    <span class="secondary-content">
+                                        <a href="#!" class="approve"><i class="material-icons">check</i></a>
+                                        <a href="#!" class="deny"><i class="material-icons">clear</i></a>
+                                    </span>
+                                </li>
+                            </ul>
 
                             <ul class="pagination">
                                 <li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
@@ -249,6 +196,24 @@
 
             // select
             $('select').formSelect();
+
+            // approve - deny
+            $('.approve').click(function (e) {
+                e.preventDefault();
+                M.toast({
+                    html: 'Comment Approved',
+                    displayLength: 3000,
+                    classes: 'adminify-toast-ok'
+                })
+            })
+            $('.deny').click(function (e) {
+                e.preventDefault();
+                M.toast({
+                    html: 'Comment Denied',
+                    displayLength: 3000,
+                    classes: 'adminify-toast-ok'
+                })
+            })
 
 
         });
