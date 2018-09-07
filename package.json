@@ -15,6 +15,7 @@
     "prod:html-minify-posts": "html-minifier --collapse-whitespace dev/posts.html > prod/posts.html",
     "prod:html-minify-categories": "html-minifier --collapse-whitespace dev/categories.html > prod/categories.html",
     "prod:html-minify-comments": "html-minifier --collapse-whitespace dev/comments.html > prod/comments.html",
+    "prod:html-minify-users": "html-minifier --collapse-whitespace dev/users.html > prod/users.html",
     "prod:sass-dev": "node-sass dev/css --output-style compressed dev/css/style.scss --output prod/css",
     "prod:image-compress": "imagemin dev/images/**/*.* --out-dir=prod/images --plugin=jpeg-recompress --plugin=svgo",
     "deploy": "surge prod --domain adminify.surge.sh"

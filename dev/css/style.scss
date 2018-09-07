@@ -29,6 +29,10 @@ table .btn-floating {
   margin-left: 5px;
 }
 
+table tbody tr td .circle {
+  max-width: 40px;
+}
+
 .ok {
   color: $ok;
 }
