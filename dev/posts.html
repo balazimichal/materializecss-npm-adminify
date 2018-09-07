@@ -96,8 +96,9 @@
                                         <option value="3">Social Marketing</option>
                                     </select>
                                 </div>
-                                <div class="input-field">
-                                    <textarea name="body" id="body" class="materialize-textarea" cols="30" rows="10"></textarea>
+                                <div>
+                                    <textarea name="body" id="body" class="materialize-textarea browser-default" cols="30"
+                                        rows="10"></textarea>
                                     <label for="body">Body</label>
                                 </div>
                             </form>
@@ -331,6 +332,7 @@
     <!-- SCRIPTS -->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script src="https://cdn.ckeditor.com/ckeditor5/11.0.1/classic/ckeditor.js"></script>
     <script>
         $(document).ready(function () {
 
@@ -348,6 +350,14 @@
 
             // select
             $('select').formSelect();
+
+
+
+            ClassicEditor
+                .create(document.querySelector('#body'))
+                .catch(error => {
+                    console.error(error);
+                });
 
 
         });
