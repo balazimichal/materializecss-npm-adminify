@@ -408,6 +408,13 @@ table.striped > tbody > tr:nth-child(odd) {
 .modal-footer {
   background-color: $black !important;
 }
+
+.card .card-action {
+  border-top-color: $black;
+}
+.card-action a {
+  color: $primary !important;
+}
 /*
 // nesting
 header {
