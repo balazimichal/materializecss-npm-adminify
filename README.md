@@ -11,10 +11,11 @@ You can preview this app on surge: http://adminify.surge.sh
 - toasts
 - button dropdown
 - working todo's section
-- modal with CKeditor
+- modal with CK editor
 
 ## Technologies
 
+- HTML5
 - Materialize CSS framework
 - jQuery
 - Automated Sass
