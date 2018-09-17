@@ -13,6 +13,8 @@ You can preview this app on surge: https://adminify.surge.sh
 - working todo's section
 - modal with CK editor
 
+![alt text](/dev/images/screencapture-adminify.png)
+
 ## Technologies
 
 - HTML5
